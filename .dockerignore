@@ -5,3 +5,6 @@ __pycache__/
 .git/
 .env
 .ipynb_checkpoints/
+data/
+logs/
+mlruns/

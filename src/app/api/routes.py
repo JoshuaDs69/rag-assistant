@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 from src.app.db.chroma_client import get_collection
 from src.app.rag.pipeline import RAGPipeline
-
+from src.app.schemas.query import QueryRequest
 
 router = APIRouter()
 
@@ -13,10 +13,8 @@ pipeline = RAGPipeline(collection)
 
 
 @router.post("/ask")
-def ask_question(payload: dict):
+def ask_question(payload: QueryRequest):
 
-    query = payload["query"]
-
-    result = pipeline.ask(query)
+    result = pipeline.ask(payload.query)
 
     return result

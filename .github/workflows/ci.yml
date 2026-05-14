@@ -35,3 +35,7 @@ jobs:
       - name: Ejecutar tests
         run: |
           pytest
+
+      - name: Build Docker image
+        run: |
+          docker build -t rag-assistant .

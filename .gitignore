@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+.env
+
+# Data
+data/raw/
+data/processed/
+
+# Experiment tracking
+mlruns/
+
+# Vector indexes / serialized objects
+*.faiss
+*.index
+*.npy
+*.pkl
+
+# Notebooks
+.ipynb_checkpoints/
+notebooks/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+#
+.git/

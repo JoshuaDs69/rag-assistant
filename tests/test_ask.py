@@ -8,7 +8,7 @@ client = TestClient(app)
 
 
 @patch("src.app.api.routes.pipeline.ask")
-def test_ask_endpoint(mock_ask):
+def test_ask_endpoint(mock_ask):#
 
     mock_ask.return_value = {
         "answer": "Mocked response"

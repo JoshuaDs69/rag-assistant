@@ -40,6 +40,7 @@ st.markdown(
     """,
     unsafe_allow_html=True)
 
+st.caption("RAG Assistant bancario BCP")
 
 st.markdown(
     """
@@ -64,14 +65,14 @@ question = st.text_input(
 
 if st.button("Enviar") and question.strip():
 
-    with st.spinner("Pensando..."):
+    with st.spinner("Consultando documentos y generando respuesta..."):
 
         try:
 
             response = requests.post(
                 "http://rag-api:8000/ask",
                 json={"query": question},
-                timeout=60
+                timeout=300
             )
 
             response.raise_for_status()

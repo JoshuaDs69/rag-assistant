@@ -1,4 +1,5 @@
 # Banking RAG Assistant with FastAPI and Ollama 🤖
+![CI](https://github.com/JoshuaDs69/rag-assistant/actions/workflows/ci.yml/badge.svg)
 
 A production-style Retrieval-Augmented Generation (RAG) assistant built with FastAPI, ChromaDB, Ollama, Docker and Streamlit, using a banking-focused corpus based on BCP public information.
 
@@ -13,7 +14,7 @@ A production-style Retrieval-Augmented Generation (RAG) assistant built with Fas
 - FastAPI backend API
 - Streamlit conversational frontend
 - ChromaDB vector database integration
-- Local LLM inference with Ollama
+- Local LLM inference with Ollama (Llama 3, Nomic-Embeded-Text)
 - Dockerized multi-service architecture
 - Automated CI pipeline with GitHub Actions
 - API testing with Pytest
@@ -108,10 +109,6 @@ The project includes a GitHub Actions CI pipeline that automatically:
 - Validates Python syntax
 - Runs automated tests with Pytest
 - Validates Docker image builds
-
-##CI/CD Bagde
-
-![CI](https://github.com/JoshuaDs69/rag-assistant/actions/workflows/ci.yml/badge.svg)
 
 ---
 

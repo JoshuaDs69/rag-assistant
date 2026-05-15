@@ -1,6 +1,8 @@
 # Banking RAG Assistant with FastAPI and Ollama 🤖
 
-A production-style Retrieval-Augmented Generation (RAG) assistant built with FastAPI, ChromaDB, Ollama, Docker and Streamlit.
+<img width="1024" height="1024" alt="BCP RAG Assistant" src="https://github.com/user-attachments/assets/8a97142b-4021-4073-9068-a33df3320379" />
+
+A production-style Retrieval-Augmented Generation (RAG) assistant built with FastAPI, ChromaDB, Ollama, Docker and Streamlit, using a banking-focused corpus based on BCP public information.
 
 ## Aplication preview
 
